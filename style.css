@@ -35,6 +35,9 @@ h3 {
   margin-right: auto;
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.break-shadow {
   box-shadow: 0 0 148px 38px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 148px 38px rgba(0, 0, 0, .6);
   -moz-box-shadow: 0 0 148px 38px rgba(0, 0, 0, .8);
@@ -74,4 +77,52 @@ h3 {
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #324777; 
+  background: #E5E5E5;
+  inset 0px -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+  inset 0px 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+}
+
+.header-container {
+  padding: 8px;
+}
+
+.header-container h3 {
+  display: inline-block;
+  padding-left: 8px;
+}
+
+.header-container img {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.header-container a {
+  color: #324777;
+}
+
+.header-container a:hover {
+  color: #5C9595;
+  text-decoration: none;
+}
+
+.media-container {
+  padding-top: 64px;
+}
+
+.media-container img {
+  width: 100%;
+  height: 50%;
+}
+
+.media-container:last-child {
+  padding-bottom: 64px;
 }
